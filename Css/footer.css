@@ -1,0 +1,171 @@
+footer {
+  width: 100%;
+  background-color: rgb(17, 17, 17); /* cor footer */
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  position: relative; /* ficar no fundo*/ 
+  margin-top: 0;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-conteudo{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 3rem 3.5rem;
+}
+
+.sobre-nos {
+  list-style: none;
+  flex-direction: column;
+}
+
+.sobre-nos .footer-link {
+  color: white;
+}
+
+.sobre-nos .footer-link:hover {
+  color: red;
+}
+
+.corrida {
+  list-style: none;
+  flex-direction: column;
+}
+
+.corrida .footer-link {
+  color: white;
+}
+
+.corrida .footer-link:hover {
+  color: red;
+}
+
+
+.servicos {
+  list-style: none;
+  flex-direction: column;
+}
+
+.servicos .footer-link{
+  color: white;
+}
+
+.servicos .footer-link:hover{
+  color: red;
+}
+
+.esportivos {
+  list-style: none;
+  flex-direction: column;
+}
+
+.esportivos .footer-link {
+  color: white;
+}
+
+.esportivos .footer-link:hover {
+  color: red;
+}
+
+.experiencias {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+
+.experiencias .footer-link {
+  color: white;
+}
+
+.experiencias .footer-link:hover {
+  color: red;
+}
+
+.redes /*  estÃ¡ escrito "redes sociais" */{
+  padding: 5px 20px;
+  margin-top: -50px;
+  margin-left: -70px;
+}
+
+.footer_redes {
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  text-decoration: none;
+  display: flex;
+  transform: translate(-100px, -12px);
+  margin-bottom: 10px;
+}
+
+#instagram i {
+  font-size: 20px;
+}
+
+#tiktok i {
+  font-size: 20px;
+}
+
+#X i {
+  font-size: 20px;
+}
+
+#facebook i {
+  font-size: 20px;
+}
+
+#youtube i {
+  font-size: 20px;
+}
+
+#instagram :hover {
+  color: #E1306C; 
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+#tiktok :hover {
+  color: #EE1D52;
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+#X :hover{
+  color: black;
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+#facebook :hover{
+  color: #1877F2;
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+#youtube :hover{
+  color: #FF0000;
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+.form-contato {
+color: black;
+transform: translate(-25px, -100px);
+}
+
+.form-contato:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.form-contato button {
+  background-color: transparent;
+  color: white;
+  padding: 10px 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* /*aplica o estilo a tudo na pag*/
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    padding: 4px 4%;
+    top: 0;
+    left: 0;
+    background-color: rgb(17, 17, 17);
+    z-index: 5;
+    position: fixed;
+}
+
+
+header ul {
+    list-style-type: none;
+    
+}
+    
+header ul li {
+    display: inline-block;
+    margin: 0 40px ;
+}
+    
+header ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Funnel Sans", sans-serif;
+    font-size: 17px;
+    display: block;
+    padding: 10px;
+}
+
+header ul li :hover {
+    color: red;
+    transition: 0.3s;
+}
+
+    .botao_contato button {
+    width: 120px;
+    height: 40px;
+    border: 0;
+    border-radius: 6px;
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 15px;
+}
+
+.botao_contato :hover {
+    background-color: rgba(255, 0, 0, 0.986);
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/*fim do header*/
+.veiculos-container {
+    display: grid; /*define um container de grid (grade) se organizará como uma grade*/
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /*cria colunas automaticas com tamanho minimo de 280px e 1 fr (fração)*/
+    gap: 30px; /*define o espaçamento entre os cards*/
+    padding: 30px; /*espaçamento em todos os lados*/
+    max-width: 1200px; /*define um limite de 1200px para o grid nao passar de 1200px*/
+    margin: 0 auto; /*centralizar o contaniner e define a margem superior como 0 e as margens direita e esquerda como "auto" */
+    margin-top: 60px;
+}
+
+.botao button {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.card-veiculos {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-veiculos:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px red;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card-veiculos img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-veiculos h3 {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.card-veiculos p {
+    font-size: 16px;
+    margin: 10px;
+    color: #555;
+}
+
+.card-veiculos .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 10px;
+    text-align: center;
+}
+
+.card-veiculos .btn:hover {
+    background-color: #c0392b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+}
+
+/*rodape*/
+
+footer {
+    width: 100%;
+    background-color: #1d1c1c; /* cor footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    position: relative; /* ficar no fundo*/ 
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-conteudo{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+.sobre-nos {
+    list-style: none;
+    flex-direction: column;
+}
+
+.sobre-nos .footer-link {
+    color: white;
+}
+
+.sobre-nos .footer-link:hover {
+    color: red;
+}
+
+.corrida {
+    list-style: none;
+    flex-direction: column;
+}
+
+.corrida .footer-link {
+    color: white;
+}
+
+.corrida .footer-link:hover {
+    color: red;
+}
+
+.servicos {
+    list-style: none;
+    flex-direction: column;
+}
+
+.servicos .footer-link{
+    color: white;
+}
+
+.servicos .footer-link:hover{
+    color: red;
+}
+
+.esportivos {
+    list-style: none;
+    flex-direction: column;
+}
+
+.esportivos .footer-link {
+    color: white;
+}
+
+.esportivos .footer-link:hover {
+    color: red;
+}
+
+.experiencias {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
+.experiencias .footer-link {
+    color: white;
+}
+
+.experiencias .footer-link:hover {
+    color: red;
+}
+
+.redes /* está escrito "redes sociais" */{
+    margin-top: -45px;
+    margin-left: -55px;
+}
+
+.footer_redes /*icones das redes*/{
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    text-decoration: none;
+    display: flex;
+    transform: translate(-100px, -12px);
+}
+
+#instagram i {
+    font-size: 20px;
+}
+
+#tiktok i {
+    font-size: 20px;
+}
+
+#X i {
+    font-size: 20px;
+}
+
+#facebook i {
+    font-size: 20px;
+}
+
+#youtube i {
+    font-size: 20px;
+}
+
+#instagram :hover {
+    color: #E1306C; 
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+
+#tiktok :hover {
+    color: #EE1D52;
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+
+#X :hover{
+    color: black;
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+
+#facebook :hover{
+    color: #1877F2;
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+
+#youtube :hover{
+    color: #FF0000;
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+
+.form-contato {
+color: black;
+transform: translate(-25px, -100px);
+}
+
+.form-contato:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.form-contato button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+}
+

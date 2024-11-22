@@ -1,0 +1,119 @@
+
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+
+header {
+  width: 100%;
+  padding: 20px 4%;
+  position: fixed ;
+  top: 0;
+  left: 0;
+  transition: .5s;
+  background: linear-gradient(to bottom , rgba(0, 0, 0, 1.43), transparent);
+  z-index: 5;
+}
+
+.logo {
+  width: 50px;
+}
+
+header ul {
+  list-style-type: none;
+  
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 40px ;
+}
+
+header ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 17px;
+  display: block;
+  padding: 10px;
+}
+
+header ul li :hover {
+  color: red;
+  transition: .2s;
+}
+
+.botao_contato button {
+  width: 120px;
+  height: 40px;
+  border: 0;
+  border-radius: 6px;
+  background-color: aliceblue;
+  color: black;
+  cursor: pointer;
+  transition: .2s;
+  font-size: 15px;
+}
+
+.botao_contato :hover{
+  background-color: red;
+  border-radius: 6px;
+}
+
+header.rolagem{
+  background-color: rgb(17, 17, 17);
+  padding: 5px 4%;
+}
+
+header.rolagem .botao_contato button {
+
+  background-color: aliceblue;
+  color: rgb(17, 17, 17);
+}
+
+header.rolagem .botao_contato :hover {
+  background-color: red;
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+.container-header {
+    max-width: 1280px;
+    margin: auto;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+    header {
+      width: 100%;
+      padding: 1px 4%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgb(17, 17, 17);;
+    
+    }
+    
+    .logo {
+      margin: 0;
+    }
+    
+    header ul {
+      list-style-type: none;
+    
+    }
+    
+    header ul li {
+      display: inline-block;
+      margin: 0 40px ;
+    }
+    
+    header ul li a {
+      color: aliceblue;
+      text-decoration: none;
+      font-family: "Funnel Sans", sans-serif;
+      font-size: 17px;
+      display: block;
+      padding: 10px;
+    }
+    
+    header ul li :hover {
+      color: red;
+      transition: .2s;
+    }
+    
+    .botao_contato button {
+      width: 120px;
+      height: 40px;
+      border: 0;
+      border-radius: 6px;
+      background-color: aliceblue;
+      color: black;
+      cursor: pointer;
+      transition: .2s;
+      font-size: 15px;
+    }
+    
+    .botao_contato :hover{
+      background-color: red;
+      border-radius: 6px;
+    }
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.date {
+  font-size: 1rem;
+  color: red;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: left;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  background-color: #1d1c1c; /* cor footer */
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  position: relative; /* ficar no fundo*/ 
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-conteudo{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+.sobre-nos {
+    list-style: none;
+    flex-direction: column;
+}
+
+.sobre-nos .footer-link {
+    color: white;
+}
+
+.sobre-nos .footer-link:hover {
+    color: red;
+}
+
+.corrida {
+    list-style: none;
+    flex-direction: column;
+}
+
+.corrida .footer-link {
+    color: white;
+}
+
+.corrida .footer-link:hover {
+    color: red;
+}
+
+
+.servicos {
+    list-style: none;
+    flex-direction: column;
+}
+
+.servicos .footer-link{
+    color: white;
+}
+
+.servicos .footer-link:hover{
+    color: red;
+}
+
+.esportivos {
+    list-style: none;
+    flex-direction: column;
+}
+
+.esportivos .footer-link {
+    color: white;
+}
+
+.esportivos .footer-link:hover {
+    color: red;
+}
+
+.experiencias {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
+.experiencias .footer-link {
+    color: white;
+}
+
+.experiencias .footer-link:hover {
+    color: red;
+}
+
+.redes /*  está escrito "redes sociais" */{
+    padding: 10px 10px;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+.footer_redes {
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    text-decoration: none;
+    display: flex;
+    transform: translate(-100px, -12px);
+}
+
+#instagram i {
+    font-size: 20px;
+}
+
+#linkedin i {
+    font-size: 20px;
+}
+
+#tiktok i {
+    font-size: 20px;
+}
+
+#X i {
+    font-size: 20px;
+}
+
+#facebook i {
+    font-size: 20px;
+}
+
+#youtube i {
+    font-size: 20px;
+}
+
+#instagram :hover {
+    color: #E1306C; 
+    transform: translateY(-2px);
+}
+
+#linkedin :hover {
+    color: #06679b;
+    transform: translateY(-2px);
+}
+
+#tiktok :hover {
+    color: #EE1D52;
+    transform: translateY(-2px);
+}
+
+#X :hover{
+    color: black;
+    transform: translateY(-2px);
+}
+
+#facebook :hover{
+    color: #1877F2;
+    transform: translateY(-2px);
+}
+
+#youtube :hover{
+    color: #FF0000;
+    transform: translateY(-2px);
+}
+
+.form-contato {
+color: black;
+transform: translate(-30px, -100px);
+}
+
+.form-contato:hover {
+    opacity: 0.5;
+}
+
+.form-contato button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+}

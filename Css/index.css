@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+
+.frase {
+  text-align: left;
+  position: relative;
+  z-index: 4;
+  padding-inline: 3.5%;
+  transform: translate(0, -300px);
+  font-size:x-large;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 2px 2px 5px rgba(5, 5, 5, 2);
+}
+
+.saber-mais {
+  color: white;
+  transform: translate(0, -300px);
+  padding-left: 50px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: small;
+  text-shadow: 2px 2px 5px rgba(5, 5, 5, 2);
+}
+
+.saber-mais button {
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  z-index: 4;
+  font-size: medium;
+  
+
+}
+
+.saber-mais button:hover {
+  color: red;
+  cursor: pointer;
+  z-index: 4;
+}
+
+
+
+
+.video_background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2; 
+}
+
+.video_background video {
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  
+}
+
+
+
+
